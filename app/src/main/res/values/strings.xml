@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">bodymassindexcalculator</string>
+    <string name="weight_pounds">weight in pounds</string>
+    <string name="height_inch">height in inch</string>
+    <string name="calculate_button">CALCULATE</string>
+
+
+</resources>

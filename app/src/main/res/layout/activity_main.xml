@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/weight_pounds"></EditText>
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
+        android:layout_below="@+id/edittext1"
+        android:text="@string/height_inch">
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:text="@string/calculate_button"
+        android:textSize="20sp"
+        android:onClick="calculate">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/bmi_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        tools:text="your bmi">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi_textview"
+        android:src="@drawable/healthy"
+        android:layout_margin="40dp"
+        android:visibility="invisible">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi_textview"
+        android:src="@drawable/obesity"
+        android:layout_margin="40dp"
+        android:visibility="invisible">>
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi_textview"
+        android:src="@drawable/overweight"
+        android:layout_margin="40dp"
+        android:visibility="invisible">>
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi_textview"
+        android:src="@drawable/underweight"
+        android:layout_margin="40dp"
+        android:visibility="invisible">>
+
+    </ImageView>
+
+
+</RelativeLayout>
